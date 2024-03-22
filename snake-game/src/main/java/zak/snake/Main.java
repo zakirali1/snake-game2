@@ -8,6 +8,8 @@ public class Main {
         int boardHeight = boardWidth;
         int tileSize = 25;
 
+
+
         JFrame frame = new JFrame("Snake");
 
         frame.setVisible(true);
@@ -19,5 +21,6 @@ public class Main {
         SnakeGame snakeGame = new SnakeGame(boardWidth, boardHeight);
         frame.add(snakeGame);
         frame.pack();
+        snakeGame.requestFocus();
     }
 }
